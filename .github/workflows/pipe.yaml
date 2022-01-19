@@ -3,6 +3,8 @@ on:
   workflow_run:
     workflows:
       - Pull request
+    types:
+      - completed
 jobs:
   pipe:
     runs-on: ubuntu-latest
