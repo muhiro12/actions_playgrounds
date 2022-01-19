@@ -1,0 +1,10 @@
+name: Pipe
+on:
+  workflow_run:
+    workflows:
+      - Pull request
+jobs:
+  pipe:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo pipe

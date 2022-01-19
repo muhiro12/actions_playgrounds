@@ -1,0 +1,10 @@
+name: Push
+on:
+  workflow_run:
+    workflows:
+      - Pipe
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo push
